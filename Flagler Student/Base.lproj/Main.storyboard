@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K1I-YP-zA6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
@@ -8,23 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="sf8-Za-z2v">
+        <!--Home-->
+        <scene sceneID="cW2-6U-HVY">
             <objects>
-                <viewController id="asa-AC-QPO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PWj-jQ-DIS">
+                <viewController id="jQ7-nZ-B4c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WG1-fa-yUa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="YNc-hG-QjJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="obK-1h-nXB"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="OFk-p9-ECE"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.circle" catalog="system" selectedImage="house.circle.fill" id="4TP-Ns-JFa"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OwM-Cg-Meg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ii7-rY-KTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-229"/>
+            <point key="canvasLocation" x="-1221" y="-720"/>
         </scene>
-        <!--Item 1-->
+        <!--Calculator-->
         <scene sceneID="S4W-fE-lNg">
             <objects>
                 <viewController id="anq-kC-4R4" sceneMemberID="viewController">
@@ -32,13 +32,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="M1e-Ls-8Y3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="G7P-L1-7f6"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="dollarsign.circle" catalog="system" selectedImage="dollarsign.circle.fill" id="G7P-L1-7f6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzc-c8-8xz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-836"/>
+            <point key="canvasLocation" x="-199" y="-720"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YML-ZO-taV">
@@ -51,17 +51,24 @@
                     </tabBar>
                     <connections>
                         <segue destination="anq-kC-4R4" kind="relationship" relationship="viewControllers" id="Exk-ej-Q82"/>
-                        <segue destination="asa-AC-QPO" kind="relationship" relationship="viewControllers" id="Asv-we-0Qm"/>
+                        <segue destination="jQ7-nZ-B4c" kind="relationship" relationship="viewControllers" id="xRr-LR-sqS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6IV-Z5-s5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-569" y="-532"/>
+            <point key="canvasLocation" x="-117" y="-1506"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="dollarsign.circle" catalog="system" width="128" height="123"/>
+        <image name="dollarsign.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="house.circle" catalog="system" width="128" height="123"/>
+        <image name="house.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78431372549019607" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.79607843137254897" green="0.18823529411764706" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
